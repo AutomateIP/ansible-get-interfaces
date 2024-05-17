@@ -1,0 +1,10 @@
+all:
+  hosts:
+    ios_device:
+      ansible_host: 192.168.1.1  # Replace with your device IP
+      ansible_user: your_username
+      ansible_password: your_password
+      ansible_connection: network_cli
+      ansible_network_os: ios
+      ansible_become: yes
+      ansible_become_method: enable
