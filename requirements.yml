@@ -1,1 +1,2 @@
-- name: cisco.ios
+collections:
+  - name: cisco.ios
