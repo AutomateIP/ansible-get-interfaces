@@ -8,4 +8,4 @@ all:
       ansible_network_os: ios
       ansible_become: yes
       #ansible_become_method: enable
-      ansible_ssh_common_args: '-o ProxyCommand="ssh selab-prod-231"'  #'-o ProxyCommand="ssh -W %h:%p selab-jump"'
+      ansible_ssh_common_args: '-o ProxyCommand="ssh -W %h:%p selab-prod-231"'  #'-o ProxyCommand="ssh -W %h:%p selab-jump"'
