@@ -9,4 +9,3 @@ all:
       ansible_become: yes
       ansible_become_method: enable
       ansible_ssh_common_args: '-o ProxyCommand="ssh selab-jump"'  #'-o ProxyCommand="ssh -W %h:%p selab-jump"'
-'
