@@ -4,7 +4,7 @@
   gather_facts: no
   tasks:
     - name: Gather IOS facts
-      cisco.ios.ios_facts:
+      cisco.iosxr.iosxr_facts:
         gather_subset: interfaces
       register: result
 

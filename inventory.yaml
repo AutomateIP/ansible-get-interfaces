@@ -1,7 +1,7 @@
 all:
   hosts:
     ios_device:
-      ansible_host: devnetsandboxiosxe.cisco.com  # Replace with your device IP
+      ansible_host: sandbox-iosxr-1.cisco.com  # Replace with your device IP
       ansible_user: admin
       ansible_password: C1sco12345
       ansible_connection: network_cli
