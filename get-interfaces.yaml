@@ -1,13 +1,12 @@
 ---
-- name: Gather Interface Facts from Cisco IOS Device
+- name: Gather Interface Facts from Cisco IOS XR Device
   hosts: ios_device
   gather_facts: no
   tasks:
-    - name: Gather IOS facts
+    - name: Gather IOS XR facts
       cisco.iosxr.iosxr_facts:
         gather_subset: '!all'
-        gather_network_resources:
-          - interfaces
+        gather_network_resources: interfaces
       register: result
 
     - name: Print interfaces
