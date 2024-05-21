@@ -5,7 +5,9 @@
   tasks:
     - name: Gather IOS facts
       cisco.iosxr.iosxr_facts:
-        gather_subset: interfaces
+        gather_subset: '!all'
+        gather_network_resources:
+          - interfaces
       register: result
 
     - name: Print interfaces
