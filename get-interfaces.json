@@ -1,0 +1,10 @@
+{
+  "$id": "get-interfaces",
+  "$schema": "https://json-schema.org/draft/202012/schema",
+  "type": "object",
+  "properties": {
+    "i": {
+      "type": "string"
+    }
+  }
+}
